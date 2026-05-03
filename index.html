@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>🌦 Weather Pro</h1>
+
+  <div class="search">
+    <input type="text" id="city" placeholder="Enter city">
+    <button onclick="getWeather()">Search</button>
+    <button onclick="getLocationWeather()">📍</button>
+  </div>
+
+  <div class="card hidden" id="weatherCard">
+    <h2 id="cityName"></h2>
+    <h1 id="temp"></h1>
+    <p id="desc"></p>
+
+    <div class="details">
+      <div>
+        <span>💧</span>
+        <p id="humidity"></p>
+      </div>
+      <div>
+        <span>🌬</span>
+        <p id="wind"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
